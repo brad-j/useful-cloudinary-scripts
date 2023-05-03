@@ -6,11 +6,13 @@ First, install [pnpm](https://pnpm.js.org/en/installation) and then run `pnpm in
 
 ## Usage
 
-Each script can be run with `pnpm run:<script-name>`.
+Each script can be run with `pnpm run:<script-name>`
 
 ## Scripts
 
-### `run:get-all-assets` (Path: `./src/get-all-assets.ts`)
+#### `run:get-all-assets`
+
+_(Path: `./src/get-all-assets.ts`)_
 
 This script will fetch all assets from your Cloudinary account and save them to a CSV file. It will also save a CSV file with the Public ID and Secure URL. This script has a prompt where you will need to enter the [resource type](https://cloudinary.com/documentation/admin_api#get_resources) you want to fetch. The resource types are: `image`, `video`, or `raw`
 
