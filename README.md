@@ -20,7 +20,7 @@ Each script can be run with `pnpm run:<script-name>`
 
 ### `run:get-all-assets`
 
-_(Path: `./src/get-all-assets.ts`)_
+<span style="font-size:12px; color: light-gray>(Path: `./src/get-all-assets.ts`)</span>
 
 #### What it does:
 
