@@ -1,0 +1,22 @@
+{
+  "name": "cloudinary-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run:get-tags": "ts-node ./src/getTags.ts",
+    "run:get-all-assets": "ts-node ./src/getAllAssets.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "dotenv": "^16.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "cloudinary": "^1.36.4"
+  }
+}
