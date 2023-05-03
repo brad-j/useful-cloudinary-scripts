@@ -24,8 +24,8 @@ Each script can be run with `pnpm run:<script-name>`
 
 #### What it does:
 
-This script exports all assets from a cloudinary sub-account. Today, the xlsx will include public*id, format, folder, and secure url. This script includes a prompt where you will need to enter the [resource type](https://cloudinary.com/documentation/admin_api#get_resources) you want to fetch. The resource types are: `image`, `video`, or `raw`
-\_Note that the raw resource type will not return a format*
+This script exports all assets from a cloudinary sub-account. Today, the xlsx will include public*id, format, folder, and secure_url. This script includes a prompt where you will need to enter the [resource type](https://cloudinary.com/documentation/admin_api#get_resources) you want to fetch. The resource types are: `image`, `video`, or `raw`
+*Note that the raw resource type will not return a format\*
 
 `assets.xlsx` will be saved in the root of the project.
 
