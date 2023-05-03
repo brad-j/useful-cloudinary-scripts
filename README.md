@@ -4,12 +4,12 @@ This is a colleciton of useful scripts for working with Cloudinary.
 
 First, install [pnpm](https://pnpm.js.org/en/installation) and then run `pnpm install` to install the dependencies. It should be possible to use `npm` or `yarn` instead, but I haven't tested it.
 
-Next, create a `.env` file in the root of the project and add the following:
+All of the scripts utilize the `src/client.ts` file to create the cloudinary client. You will need to create a `.env` file in the root of the project and add the following:
 
-```
-CLOUDINARY_CLOUD_NAME=process.env.CLOUDINARY_CLOUD_NAME
-CLOUDINARY_API_KEY=process.env.CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET=process.env.CLOUDINARY_API_SECRET
+```ts
+CLOUDINARY_CLOUD_NAME=<your cloud name>
+CLOUDINARY_API_KEY=<your api key>
+CLOUDINARY_API_SECRET=<your api secret>
 ```
 
 ## Usage
