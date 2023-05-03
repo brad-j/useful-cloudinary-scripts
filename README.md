@@ -35,3 +35,13 @@ This script exports all assets from a cloudinary sub-account. Today, the xlsx wi
 - [ ] Allow users to choose which fields to include in the file
 - [ ] Allow the naming of the data file
 - [ ] Allow users to choose CSV or Excel
+
+---
+
+### `run:upload-assets` [Upload API](https://cloudinary.com/documentation/image_upload_api_reference)
+
+(Path: `./src/upload-assets.ts`)
+
+#### What it does:
+
+This script uploads assets to a cloudinary sub-account. Currently, there needs to be a `./assets` directory that contains the assets to be uploaded.

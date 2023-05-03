@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "run:get-tags": "ts-node ./src/getTags.ts",
-    "run:get-all-assets": "ts-node ./src/getAllAssets.ts"
+    "run:get-all-assets": "ts-node ./src/getAllAssets.ts",
+    "run:upload-assets": "ts-node ./src/uploadAssets.ts"
   },
   "keywords": [],
   "author": "",
