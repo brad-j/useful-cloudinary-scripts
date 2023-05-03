@@ -18,6 +18,6 @@ This script will fetch all assets from your Cloudinary account and save them to 
 
 ### TODO
 
-- [] Allow users to choose which fields to include in the CSV
-- [] Allow the naming of the data file
-- [] Allow users to choose CSV or Excel
+- [ ] Allow users to choose which fields to include in the CSV
+- [ ] Allow the naming of the data file
+- [ ] Allow users to choose CSV or Excel
