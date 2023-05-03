@@ -20,15 +20,18 @@ Each script can be run with `pnpm run:<script-name>`
 
 ### `run:get-all-assets`
 
-<span style="font-size:12px; color: light-gray">(Path: `./src/get-all-assets.ts`)</span>
+(Path: `./src/get-all-assets.ts`)
 
 #### What it does:
 
-This script exports all assets from a cloudinary sub-account. Today, the CSV will include the Public Id and Secure URL. This script includes a prompt where you will need to enter the [resource type](https://cloudinary.com/documentation/admin_api#get_resources) you want to fetch. The resource types are: `image`, `video`, or `raw`
+This script exports all assets from a cloudinary sub-account. Today, the xlsx will include public*id, format, folder, and secure_url. This script includes a prompt where you will need to enter the [resource type](https://cloudinary.com/documentation/admin_api#get_resources) you want to fetch. The resource types are: `image`, `video`, or `raw`
+\_Note that the raw resource type will not return a format*
+
+`assets.xlsx` will be saved in the root of the project.
 
 ### TODO
 
 - [ ] Error handling/reporting
-- [ ] Allow users to choose which fields to include in the CSV
+- [ ] Allow users to choose which fields to include in the file
 - [ ] Allow the naming of the data file
 - [ ] Allow users to choose CSV or Excel
