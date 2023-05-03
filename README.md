@@ -18,7 +18,7 @@ Each script can be run with `pnpm run:<script-name>`
 
 ## Scripts
 
-### `run:get-all-assets`
+### `run:get-all-assets` [Admin API](https://cloudinary.com/documentation/admin_api)
 
 (Path: `./src/get-all-assets.ts`)
 
