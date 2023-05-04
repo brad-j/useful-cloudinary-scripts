@@ -1,5 +1,8 @@
 # Useful Cloudinary Scripts
 
+**Important**
+This is very new and very alhpa. Use at your own risk!
+
 This is a colleciton of useful scripts for working with Cloudinary.
 
 First, install [pnpm](https://pnpm.js.org/en/installation) and then run `pnpm install` to install the dependencies. It should be possible to use `npm` or `yarn` instead, but I haven't tested it.
@@ -20,7 +23,7 @@ Each script can be run with `pnpm run:<script-name>`
 
 ### `run:get-all-assets` [Admin API](https://cloudinary.com/documentation/admin_api)
 
-(Path: `./src/get-all-assets.ts`)
+Path: `./src/get-all-assets.ts`
 
 #### What it does:
 
@@ -35,13 +38,19 @@ This script exports all assets from a cloudinary sub-account. Today, the xlsx wi
 - [ ] Allow users to choose which fields to include in the file
 - [ ] Allow the naming of the data file
 - [ ] Allow users to choose CSV or Excel
+- [ ] Allow users to choose ALL resource types
 
 ---
 
 ### `run:upload-assets` [Upload API](https://cloudinary.com/documentation/image_upload_api_reference)
 
-(Path: `./src/upload-assets.ts`)
+Path: `./src/upload-assets.ts`
 
 #### What it does:
 
 This script uploads assets to a cloudinary sub-account. Currently, there needs to be a `./assets` directory that contains the assets to be uploaded.
+
+TODO
+
+- [ ] Allow users to choose which folder to upload **from**
+- [ ] Allow users to choose which folder to upload **to**

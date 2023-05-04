@@ -1,4 +1,3 @@
-import { stdin } from 'process';
 import cloudinary from './client';
 import readline from 'readline';
 const path = require('path');
