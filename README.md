@@ -1,7 +1,6 @@
 # Useful Cloudinary Scripts
 
-**Warning**
-
+**Warning**{' '}
 This is very new and very alhpa. Use at your own risk!
 
 This is a colleciton of useful scripts for working with Cloudinary.
