@@ -50,7 +50,7 @@ async function fetchMetadataFields(): Promise<void> {
     utils.book_append_sheet(workbook, metadataWorksheet, 'MetadataFields');
     utils.book_append_sheet(workbook, enumSetValuesWorksheet, 'EnumSetValues');
 
-    const fileName = 'ca_ints.xlsx';
+    const fileName = 'smd.xlsx';
     const fileBuffer = write(workbook, { bookType: 'xlsx', type: 'buffer' });
     await writeFile(fileName, fileBuffer);
     console.log(`Metadata fields written to: ${fileName}`);

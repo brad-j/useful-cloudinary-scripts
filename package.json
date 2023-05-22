@@ -7,11 +7,15 @@
     "run:get-tags": "ts-node ./src/getTags.ts",
     "run:get-all-assets": "ts-node ./src/getAllAssets.ts",
     "run:create-folders": "ts-node ./src/createFolders.ts",
+    "run:create-vendor-folders": "ts-node ./src/createVendorFolders.ts",
     "run:get-all-folders": "ts-node ./src/getAllFolders.ts",
+    "run:get-sub-folders": "ts-node ./src/getSubFolders.ts",
     "run:delete-sub-folders": "ts-node ./src/deleteSubFolders.ts",
     "run:delete-root-folders": "ts-node ./src/deleteRootFolders.ts",
     "run:upload-assets": "ts-node ./src/uploadAssets.ts",
-    "run:get-smd": "ts-node ./src/getSmd.ts"
+    "run:get-smd": "ts-node ./src/getSmd.ts",
+    "run:create-field-options": "ts-node ./src/createFieldOptions.ts",
+    "run:get-options": "ts-node ./src/getSmdOptions.ts"
   },
   "keywords": [],
   "author": "",
