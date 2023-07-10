@@ -3,12 +3,7 @@ import { writeFile } from 'fs/promises';
 import { utils, write } from 'xlsx';
 
 interface StructuredMetadataField {
-  label: string;
-  type: string;
-  values?: string[];
-}
-
-interface StructuredMetadataField {
+  external_id: string;
   label: string;
   type: string;
   values?: string[];
@@ -28,6 +23,7 @@ async function fetchMetadataFields(): Promise<void> {
 
     response.metadata_fields.forEach((field: any) => {
       metadata.push({
+        external_id: field.external_id,
         label: field.label,
         type: field.type,
       });
@@ -52,7 +48,7 @@ async function fetchMetadataFields(): Promise<void> {
 
     const fileName = 'smd.xlsx';
     const fileBuffer = write(workbook, { bookType: 'xlsx', type: 'buffer' });
-    await writeFile(fileName, fileBuffer);
+    await writeFile(`data/output/${fileName}`, fileBuffer);
     console.log(`Metadata fields written to: ${fileName}`);
   } catch (error) {
     console.error('Error fetching metadata fields:', error);

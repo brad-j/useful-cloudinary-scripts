@@ -1,21 +1,3 @@
-// import cloudinary from './client';
-
-// async function getSmdOptions(smd_name: string) {
-//   try {
-//     const field = await cloudinary.api.metadata_field_by_field_id(smd_name).then((res: any) => {
-//         const datasource = res.datasource.values;
-//         return datasource;
-//     });
-
-//     console.log(field);
-    
-//   } catch (error) {
-//     console.error('Error fetching metadata fields:', error);
-//   }
-// }
-
-// getSmdOptions('Asset_Sub-Type');
-
 import cloudinary from './client';
 import { writeFile } from 'fs/promises';
 import { utils, write } from 'xlsx';
@@ -27,10 +9,12 @@ interface DataSourceEntry {
 
 async function getSmdOptions(smd_name: string) {
   try {
-    const field = await cloudinary.api.metadata_field_by_field_id(smd_name).then((res: any) => {
+    const field = await cloudinary.api
+      .metadata_field_by_field_id(smd_name)
+      .then((res: any) => {
         const datasource = res.datasource.values;
         return datasource;
-    });
+      });
 
     // Prepare data for Excel
     const data: DataSourceEntry[] = field.map((item: any) => ({
@@ -48,13 +32,12 @@ async function getSmdOptions(smd_name: string) {
     // Write workbook to a file
     const fileName = smd_name + '.xlsx';
     const fileBuffer = write(workbook, { bookType: 'xlsx', type: 'buffer' });
-    await writeFile(fileName, fileBuffer);
+    await writeFile(`data/output/${fileName}`, fileBuffer);
 
     console.log(`Data written to: ${fileName}`);
-    
   } catch (error) {
     console.error('Error fetching metadata fields:', error);
   }
 }
 
-getSmdOptions('Asset_Sub-SubType');
+getSmdOptions('asset_type');

@@ -11,6 +11,6 @@ data.forEach((row: any) => {
     `Vendors/${row.folder_name}/UPCProductImages`,
     (error: any, result: any) => {
       console.log(result);
-    },
+    }
   );
 });
